@@ -47,6 +47,9 @@ touch $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 touch $pdirectory/AI-IntelArc-ArchLinux/libref
 echo "pdirectory=\"$pdirectory\"" > $pdirectory/AI-IntelArc-ArchLinux/libref
 echo "export LD_LIBRARY_PATH=$pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/lib" >> $pdirectory/AI-IntelArc-ArchLinux/libref
+echo "export USE_XETLA=OFF" >> $pdirectory/AI-IntelArcArchLinux/libref
+echo "export SYCL_PI_LEVEL_ZERO_USE_IMMEDIATE_COMMANDLISTS=1" >> $pdirectory/AI-IntelArcArchLinux/libref
+echo "export SYCL_CACHE_PERSISTENT=1" >> $pdirectory/AI-IntelArcArchLinux/libref
 echo "#!/usr/bin/env bash" > $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "git switch main" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
