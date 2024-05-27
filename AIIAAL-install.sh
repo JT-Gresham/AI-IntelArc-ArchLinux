@@ -30,8 +30,8 @@ echo ""
 echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux"
 cd $pdirectory/AI-IntelArc-ArchLinux
 echo ""
-echo "Creating python 3.10 environment (AI-IntelArc-ArchLinux_env)"
-/usr/bin/python3.10 -m venv AI-IntelArc-ArchLinux_env
+echo "Creating python 3.11 environment (AI-IntelArc-ArchLinux_env)"
+/usr/bin/python3.11 -m venv AI-IntelArc-ArchLinux_env
 echo ""
 echo "Activating environment -> AI-IntelArc-ArchLinux_env"
 source AI-IntelArc-ArchLinux_env/bin/activate
