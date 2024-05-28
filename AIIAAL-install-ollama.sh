@@ -21,11 +21,11 @@ cd $pdirectory/AI-IntelArc-ArchLinux
 echo ""
 ./AI-Start.sh
 echo ""
-echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux"
-cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
-echo ""
 echo "Activating environment -> AI-IntelArc-ArchLinux_env"
 source AI-IntelArc-ArchLinux_env/bin/activate
+echo ""
+echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux"
+cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
 echo ""
 echo "Installing packages from requirements_$aiiaalpkg.txt..."
 pip install -r requirements_$aiiaalpkg.txt
