@@ -13,10 +13,10 @@ Master repository for AIIAAL - A one-stop framework for popular AI related softw
 
 # Features
 Features installers and creates launchers for:
-*    Ollama (python) -- WORKING
-*    Fooocus         -- WIP
-*    CrewAI          -- WIP
-*    Automatic1111   -- WIP
+*    Ollama + Open WebUI   -- WORKING
+*    Fooocus               -- WIP
+*    CrewAI                -- WIP
+*    Automatic1111         -- WIP
   
 # REQUIREMENTS
 This framework assumes that you have these already installed:
