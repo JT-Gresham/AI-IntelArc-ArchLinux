@@ -1,1 +1,1 @@
-crewai[tools]
+crewai
