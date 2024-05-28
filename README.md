@@ -7,7 +7,7 @@ Master repository for AIIAAL - A one-stop framework for popular AI related softw
 
 *    Please consider supporting me with [Buy Me A Coffee](https://bmc.link/OCD_Insomniac)!
 *    Get the buzz out by reviewing and sharing on social networks like Facebook, Twitter (formerly), etc...
-*    Consider purchasing something from the Amazon wishlist...items I always need more of. (Mouses, Keyboards, Storage, etc...)
+*    Consider purchasing something from the [Amazon wishlist](https://www.amazon.com/hz/wishlist/ls/25OBUY6VTN1C8?ref_=wl_share)...items I always need more of. (Mouses, Keyboards, Storage, etc...)
 
 <br clear="left"/>
 
