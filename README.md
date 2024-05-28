@@ -20,6 +20,8 @@ Features installers and creates launchers for:
   
 # REQUIREMENTS
 This framework assumes that you have these already installed:
+*    Arch Linux based OS - Duh...
+*    Intel Arc GPU - Duh...
 *    The latest Intel Arc GPU drivers
 *    Python 3.11 (can be found in the AUR as 'python311')
   
