@@ -24,9 +24,6 @@ echo ""
 echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux"
 cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
 echo ""
-echo "Activating environment -> AI-IntelArc-ArchLinux_env"
-source AI-IntelArc-ArchLinux_env/bin/activate
-echo ""
 echo "Cloning official $aiiaalpkg repository to $aiiaalpkg-IntelArc-ArchLinux"
 git clone "https://github.com/lllyasviel/Fooocus.git" "/tmp/$aiiaalpkg-IntelArc-ArchLinux"
 mv -f "/tmp/$aiiaalpkg-IntelArc-ArchLinux/.git" "$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/"
@@ -36,6 +33,10 @@ source $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/libref-$a
 echo ""
 echo "Applying AIIAAL modifications to original fooocus..."
 AIIAAL_update_fooocus
+rm -r models/checkpoints
+ln -sf $pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints models/checkpoints
+rm -r models/loras
+ln -sf $pdirectory/AI-IntelArc-ArchLinux/shared/loras models/loras
 echo ""
 echo "Installing packages from requirements_versions.txt..."
 pip install -r requirements_versions.txt
