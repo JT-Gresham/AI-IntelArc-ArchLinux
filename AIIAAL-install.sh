@@ -17,8 +17,10 @@ read go
 echo "AIIAAL installer needs to check/install some PACMAN packages...Please authorize to continue..."
 sudo pacman -S --needed intel-compute-runtime intel-graphics-compiler ocl-icd opencl-headers 
 echo ""
-echo "---NOTE: This directory can get pretty big in size as you add AI Software, LLMs, Checkpoints...etc!"
-echo "         Make sure you've got storage space to accomodate your future needs!"
+echo "--- Important Notes:"
+echo "   * This directory can get pretty big in size as you add AI Software, LLMs, Checkpoints...etc!"
+echo "   * Make sure you've got storage space to accomodate your future needs!"
+echo "   * To avoid potential issues, the FULL PATH should not contain any spaces or special characters."
 echo ""
 echo "What is the FULL PATH of directory where you want to install \"AI-IntelArc-ArchLinux\"?"
 echo "---IMPORTANT: Exclude the trailing \"/\"---"
