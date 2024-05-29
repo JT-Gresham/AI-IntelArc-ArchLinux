@@ -22,12 +22,12 @@ Features installers and creates launchers for:
   </tr>
   <tr>
     <td>Ollama with Open WebUI</td>
-    <td align="center">Testing</td>
-    <td>Installs, server starts, and UI opens in browser without error. Seems to be working. Testing is ongoing.</td>
+    <td align="center">WIP Testing</td>
+    <td>Installs, server starts, and UI opens in browser without error. Testing is ongoing.</td>
   </tr>
   <tr>
     <td>CrewAI</td>
-    <td align="center">Testing</td>
+    <td align="center">WIP Testing</td>
     <td>Could not use crewai[tools] due to package conflicts, but standard version installs without error. Testing is ongoing.</td>
   </tr>
     <tr>
