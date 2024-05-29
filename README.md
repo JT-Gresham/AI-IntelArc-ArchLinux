@@ -56,5 +56,5 @@ This framework assumes that you have these already installed:
   
 # Installation Is Easy
 Simply run the installation bash file (ex: AIIAAL-install.sh, AIIAAL-install-ollama.sh, etc...) for the package you want to install.  Yeah...it's that easy!
-*    Note: AIIAAL needs to be already installed otherwise the other installers won't work. AIIAAL is the framework the others are built on and you only need to install the framework (AIIAAL) once.
+*    Note: [AIIAAL needs to be already installed](https://github.com/JT-Gresham/AI-IntelArc-ArchLinux/blob/main/AIIAAL-install.sh) before using the other installers. AIIAAL is the framework the others are built on. You only need to install the framework (AIIAAL) once.
   
