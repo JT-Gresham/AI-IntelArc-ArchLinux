@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
 AIIAAL_update_fooocus () {
-  git pull "https://github.com/lllyasviel/Fooocus.git" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux" --force
+  cd $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux
+  git switch main
+  git reset --hard HEAD
+  git pull
 }
