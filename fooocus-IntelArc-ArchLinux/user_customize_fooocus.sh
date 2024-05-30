@@ -12,16 +12,21 @@ cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
 #  Change into the fooocus directory for the next part.
 cd fooocus-IntelArc-ArchLinux/modules
 #  Since my name is both capital letters, I need to make a change into a fooocus file so it will recognize my name as "JT" ...not "Jt" (only if needed)
+#  This will get pretty jank if I don't define all those strings with single quotes as variables...sed isn't happy about it.
+JTentry1="k = k.replace(Jt, JT)"
+JTentry2="'sdxl_styles_JT.json'"
+fkdupstr1="k = k.replace('(s', '(S')"
+fkdupstr2="'sdxl_styles_sai.json',"
   if grep -Fxq "k = k.replace('Jt', 'JT')" sdxl_styles.py
     then
       echo "JT correction entry found in sdxl_styles.py...skipping"
     else
-      sed -i 's|k = k.replace\(\'\(s\', \'\(S\'\)|k = k.replace\(\'\(s\', \'\(S\'\)\n    k = k.replace\(\'Jt\', \'JT\'\)|g' sdxl_styles.py
+      sed -i 's|$fkdupstr1|${fkdupstr1}\n    $JTentry1|g' sdxl_styles.py
   fi
 #  Lastly, I want fooocus to make sure to add my styles only if needed...the 'if' statement makes sure there isn't duplicate lines of code added. 
   if grep -Fxq "sdxl_styles_JT.json" sdxl_styles.py
     then
       echo "JT styles entry found in sdxl_styles.py...skipping"
     else
-      sed -i 's|\'sdxl_styles_sai.json\',|\'sdxl_styles_sai.json\',\n          \'sdxl_styles_JT.json\',|g' sdxl_styles.py
+      sed -i 's| |${fkdupstr2}\n          \$JTentry2|g' sdxl_styles.py
   fi
