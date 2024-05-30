@@ -37,9 +37,11 @@ AIIAAL_update_$aiiaalpkg
 echo ""
 echo "Installing packages from requirements_versions.txt..."
 cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
+sleep 1
 pip install -r requirements_versions.txt
 echo ""
 echo "Creating the launcher file ($aiiaalpkg-Start.sh)"
+cp user_customize_fooocus_example.sh user_customize_fooocus.sh
 touch $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "#!/usr/bin/env bash" > $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
