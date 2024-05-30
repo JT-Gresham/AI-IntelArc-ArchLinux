@@ -23,5 +23,5 @@ cd fooocus-IntelArc-ArchLinux/modules
     then
       echo "JT styles entry found in sdxl_styles.py...skipping"
     else
-      sed -i 's|\'sdxl_styles_sai.json,|\'sdxl_styles_sai.json\',\n          \'sdxl_styles_JT.json\',|g' sdxl_styles.py
+      sed -i 's|\'sdxl_styles_sai.json\',|\'sdxl_styles_sai.json\',\n          \'sdxl_styles_JT.json\',|g' sdxl_styles.py
   fi
