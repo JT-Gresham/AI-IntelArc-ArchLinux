@@ -30,3 +30,7 @@ ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints" "$pdirectory/AI-In
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
 }
+
+fooocus-exit () {
+    kill $(pidof python $pdirectory/AI-IntelArc-ArchLinux/fooocus)
+}
