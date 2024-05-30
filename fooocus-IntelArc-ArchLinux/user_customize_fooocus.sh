@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source libref
+source AI-IntelArc-ArchLinux/libref
 ####  This file is for you to add any code you want to execute just before fooocus launches.  This will not be updated when AIIAAL or fooocus updates.
 ####  This is useful if you want to create custom presets and make sure your code, links, etc gets put back after an official update from the fooocus team.
 ####  I'll include the code I wrote to load my own custom preset as an example.  I didn't wnat to do this every time the fooocus team updated...
