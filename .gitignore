@@ -1,1 +1,12 @@
+__pycache__
+*.ckpt
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.patch
+*.backup
+*.corrupted
+*.partial
+*.onnx
 /shared
