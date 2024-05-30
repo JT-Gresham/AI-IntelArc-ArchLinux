@@ -9,5 +9,5 @@ __pycache__
 *.corrupted
 *.partial
 *.onnx
-/shared
-/fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
+shared/*
+fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
