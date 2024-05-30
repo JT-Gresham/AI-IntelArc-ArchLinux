@@ -8,13 +8,19 @@ source AI-IntelArc-ArchLinux/libref
 ####    eg: where the AI-IntelArc-ArchLinux directory is located
 
 #### EXAMPLE CODE ####
+
 #  Change directory to make things easier
 cd $pdirectory/AI-IntelArc-ArchLinux
+
 #  Copy files (without overwritting) from my custom preset directory (FOOOCUS_Presets) I created in the AIIAAL shared folder
 cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
+
 #  Change into the fooocus directory for the next part.
 cd fooocus-IntelArc-ArchLinux/modules
+
 #  Since my name is both capital letters, I need to make a change into a fooocus file so it will recognize my name as "JT" ...not "Jt" (only if needed)
+#    Coding note: The \x27 that you see everywhere is an ASCII escape...necessary for sed to process strings with single quotes in them.
+
   if grep -Fxq "k = k.replace('Jt', 'JT')" sdxl_styles.py
     then
       echo "JT correction entry found in sdxl_styles.py...skipping"
