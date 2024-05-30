@@ -31,6 +31,7 @@ ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i" "$pdirectory/A
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles"
+cd $pdirectory
 $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
 }
 
