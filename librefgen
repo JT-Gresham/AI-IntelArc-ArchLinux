@@ -10,4 +10,11 @@ echo "export LD_LIBRARY_PATH=$pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchL
 echo "export USE_XETLA=OFF" >> ./libref
 echo "export SYCL_PI_LEVEL_ZERO_USE_IMMEDIATE_COMMANDLISTS=1" >> ./libref
 echo "export SYCL_CACHE_PERSISTENT=1" >> ./libref
+
+echo "AIIAAL_update () {" >> ./libref
+echo "    cd $pdirectory/AI-IntelArc-ArchLinux" >> ./libref
+echo "    git switch main" >> ./libref
+echo "    git reset --hard HEAD" >> ./libref
+echo "    git pull" >> ./libref
+echo "}" >> ./libref
 echo "LIBREF regenerated."
