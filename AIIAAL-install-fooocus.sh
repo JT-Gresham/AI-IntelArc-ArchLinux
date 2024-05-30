@@ -3,7 +3,6 @@
 source ./libref
 source ./AI-IntelArc-ArchLinux_env/bin/activate
 aiiaalpkg="fooocus"
-#!/usr/bin/env bash
 
 echo "########## $aiiaalpkg for Intel Arc GPUs on Arch Linux ##########"
 echo "##################### framework by JT Gresham #####################"
