@@ -56,4 +56,5 @@ echo "Setting the new start file to be executable. (Authorization Required)"
 sudo chmod +x $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "Creating executable link in /usr/bin --> AIIAAL-$aiiaalpkg"
 sudo ln -sf "$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh" "/usr/bin/AIIAAL-$aiiaalpkg"
+sudo ln -sf "/usr/bin/AIIAAL-$aiiaalpkg" "/bin/AIIAAL-$aiiaalpkg"
 echo "Installation complete. Start with command: AIIAAL-$aiiaalpkg with any fooocus arguments afterward"
