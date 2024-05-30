@@ -10,27 +10,28 @@ source AI-IntelArc-ArchLinux/libref
 #### EXAMPLE CODE ####
 
 #  Change directory to make things easier
-cd $pdirectory/AI-IntelArc-ArchLinux
+#cd $pdirectory/AI-IntelArc-ArchLinux
 
 #  Copy files (without overwritting) from my custom preset directory (FOOOCUS_Presets) I created in the AIIAAL shared folder
-cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
+#cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
 
 #  Change into the fooocus directory for the next part.
-cd fooocus-IntelArc-ArchLinux/modules
+#cd fooocus-IntelArc-ArchLinux/modules
 
 #  Since my name is both capital letters, I need to make a change into a fooocus file so it will recognize my name as "JT" ...not "Jt" (only if needed)
 #    Coding note: The \x27 that you see everywhere is an ASCII escape...necessary for sed to process strings with single quotes in them.
 
-  if grep -Fxq "k = k.replace('Jt', 'JT')" sdxl_styles.py
-    then
-      echo "JT correction entry found in sdxl_styles.py...skipping"
-    else
-      sed -i 's|k = k.replace(\x27(s\x27, \x27(S\x27)|k = k.replace(\x27(s\x27, \x27(S\x27)\n    k = k.replace(\x27Jt\x27, \x27JT\x27)|g' sdxl_styles.py
-  fi
+#  if grep -Fxq "k = k.replace('Jt', 'JT')" sdxl_styles.py
+#    then
+#      echo "JT correction entry found in sdxl_styles.py...skipping"
+#    else
+#      sed -i 's|k = k.replace(\x27(s\x27, \x27(S\x27)|k = k.replace(\x27(s\x27, \x27(S\x27)\n    k = k.replace(\x27Jt\x27, \x27JT\x27)|g' sdxl_styles.py
+#  fi
+
 #  Lastly, I want fooocus to make sure to add my styles only if needed...the 'if' statement makes sure there isn't duplicate lines of code added. 
-  if grep -Fxq "sdxl_styles_JT.json" sdxl_styles.py
-    then
-      echo "JT styles entry found in sdxl_styles.py...skipping"
-    else
-      sed -i 's|\x27sdxl_styles_sai.json\x27,|\x27sdxl_styles_sai.json\x27,\n          \x27sdxl_styles_JT.json\x27,|g' sdxl_styles.py
-  fi
+#  if grep -Fxq "sdxl_styles_JT.json" sdxl_styles.py
+#    then
+#      echo "JT styles entry found in sdxl_styles.py...skipping"
+#    else
+#      sed -i 's|\x27sdxl_styles_sai.json\x27,|\x27sdxl_styles_sai.json\x27,\n          \x27sdxl_styles_JT.json\x27,|g' sdxl_styles.py
+#  fi
