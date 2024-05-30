@@ -28,5 +28,5 @@ fkdupstr2="'sdxl_styles_sai.json',"
     then
       echo "JT styles entry found in sdxl_styles.py...skipping"
     else
-      sed -i 's| |${fkdupstr2}\n          \$JTentry2|g' sdxl_styles.py
+      sed -i 's|$fkdupstr2|${fkdupstr2}\n          \$JTentry2|g' sdxl_styles.py
   fi
