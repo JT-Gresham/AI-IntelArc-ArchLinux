@@ -32,8 +32,8 @@ Features installers and creates launchers for:
   </tr>
     <tr>
     <td>Fooocus</td>
-    <td align="center">WIP</td>
-    <td>I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. Currently attempting to modify for AIIAAL.</td>
+    <td align="center">WIP Testing</td>
+    <td>First iteration of modification process done. Installs, opens in browser, and generates images using the GPU (xpu). I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. I will leave it up for the time being.</td>
   </tr>
   <tr>
     <td>Automatic 1111 (stable-diffusion-webui)</td>
