@@ -21,12 +21,12 @@ fkdupstr2="'sdxl_styles_sai.json',"
     then
       echo "JT correction entry found in sdxl_styles.py...skipping"
     else
-      sed -i 's|$fkdupstr1|${fkdupstr1}\n    $JTentry1|g' sdxl_styles.py
+      sed -i 's|k = k.replace(\x27(s\x27, \x27(S\x27)|k = k.replace(\x27(s\x27, \x27(S\x27)\n    k = k.replace(Jt, JT)|g' sdxl_styles.py
   fi
 #  Lastly, I want fooocus to make sure to add my styles only if needed...the 'if' statement makes sure there isn't duplicate lines of code added. 
   if grep -Fxq "sdxl_styles_JT.json" sdxl_styles.py
     then
       echo "JT styles entry found in sdxl_styles.py...skipping"
     else
-      sed -i 's|$fkdupstr2|${fkdupstr2}\n          \$JTentry2|g' sdxl_styles.py
+      sed -i 's|\x27sdxl_styles_sai.json\x27,|\x27sdxl_styles_sai.json\x27,\n          \x27sdxl_styles_JT.json\x27,|g' sdxl_styles.py
   fi
