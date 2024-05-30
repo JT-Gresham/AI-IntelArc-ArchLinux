@@ -12,7 +12,7 @@ cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
 #  Change into the fooocus directory for the next part.
 cd fooocus-IntelArc-ArchLinux/modules
 #  Since my name is both capital letters, I need to make a change into a fooocus file so it will recognize my name as "JT" ...not "Jt" (only if needed)
-  if grep -Fxq "k = k.replace\(\'Jt\', \'JT\'\)" sdxl_styles.py
+  if grep -Fxq "k = k.replace('Jt', 'JT')" sdxl_styles.py
     then
       echo "JT correction entry found in sdxl_styles.py...skipping"
     else
