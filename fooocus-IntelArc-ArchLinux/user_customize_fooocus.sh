@@ -12,11 +12,6 @@ cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
 #  Change into the fooocus directory for the next part.
 cd fooocus-IntelArc-ArchLinux/modules
 #  Since my name is both capital letters, I need to make a change into a fooocus file so it will recognize my name as "JT" ...not "Jt" (only if needed)
-#  This will get pretty jank if I don't define all those strings with single quotes as variables...sed isn't happy about it.
-JTentry1="k = k.replace(Jt, JT)"
-JTentry2="'sdxl_styles_JT.json'"
-fkdupstr1="k = k.replace('(s', '(S')"
-fkdupstr2="'sdxl_styles_sai.json',"
   if grep -Fxq "k = k.replace('Jt', 'JT')" sdxl_styles.py
     then
       echo "JT correction entry found in sdxl_styles.py...skipping"
