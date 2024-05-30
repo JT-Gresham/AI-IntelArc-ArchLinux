@@ -36,6 +36,7 @@ echo "Applying AIIAAL modifications to original $aiiaalpkg..."
 AIIAAL_update_$aiiaalpkg
 echo ""
 echo "Installing packages from requirements_versions.txt..."
+cd $$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
 pip install -r requirements_versions.txt
 echo ""
 echo "Creating the launcher file ($aiiaalpkg-Start.sh)"
