@@ -7,7 +7,7 @@
 #### EXAMPLE CODE ####
 #  Change directory to make things easier
 cd $pdirectory/AI-IntelArc-ArchLinux
-#  Copy files from my custom preset directory I created in the AIIAAL shared folder without overwritting
+#  Copy files (without overwritting) from my custom preset directory (FOOOCUS_Presets) I created in the AIIAAL shared folder
 cp --no-clobber -R shared/FOOOCUS_Presets/* fooocus-IntelArc-ArchLinux/presets/
 #  Change into the fooocus directory for the next part.
 cd fooocus-IntelArc-ArchLinux/modules
