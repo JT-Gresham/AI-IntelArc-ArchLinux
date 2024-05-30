@@ -16,12 +16,12 @@ cd fooocus-IntelArc-ArchLinux/modules
     then
       echo "JT correction entry found in sdxl_styles.py...skipping"
     else
-      sed 's|k = k.replace(\'(s\', \'(S\')|k = k.replace(\'(s\', \'(S\')\n    k = k.replace(\'Jt\', \'JT\')|g' sdxl_styles.py
+      sed -i 's|k = k.replace(\'(s\', \'(S\')|k = k.replace(\'(s\', \'(S\')\n    k = k.replace(\'Jt\', \'JT\')|g' sdxl_styles.py
   fi
 #  Lastly, I want fooocus to make sure to add my styles only if needed...the 'if' statement makes sure there isn't duplicate lines of code added. 
   if grep -Fxq "sdxl_styles_JT.json" sdxl_styles.py
     then
       echo "JT styles entry found in sdxl_styles.py...skipping"
     else
-      sed 's|\'sdxl_styles_sai.json,|\'sdxl_styles_sai.json\',\n          \'sdxl_styles_JT.json\',|g' sdxl_styles.py
+      sed -i 's|\'sdxl_styles_sai.json,|\'sdxl_styles_sai.json\',\n          \'sdxl_styles_JT.json\',|g' sdxl_styles.py
   fi
