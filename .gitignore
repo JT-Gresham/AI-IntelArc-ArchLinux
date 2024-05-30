@@ -10,3 +10,4 @@ __pycache__
 *.partial
 *.onnx
 /shared
+user_customize_fooocus.sh
