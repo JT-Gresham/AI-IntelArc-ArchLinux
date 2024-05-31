@@ -32,8 +32,13 @@ Features installers and creates launchers for:
   </tr>
     <tr>
     <td>Fooocus</td>
-    <td align="center">WIP Testing</td>
-    <td>First iteration of modification process done. Installs, opens in browser, and generates images using the GPU (xpu). I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. I will leave it up for the time being.</td>
+    <td align="center">Functional</td>
+    <td>Installs, opens in browser, and generates images using the GPU (xpu). I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. I will leave it up for the time being.</td>
+  </tr>
+    <tr>
+    <td>Forge (Automatic 1111)</td>
+    <td align="center">Functional-ish</td>
+    <td>I've successfully gotten it working and making images. Testing is ongoing beyond that.</td>
   </tr>
   <tr>
     <td>Automatic 1111 (stable-diffusion-webui)</td>
