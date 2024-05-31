@@ -19,7 +19,7 @@ echo ""
 echo "Changing directory -> $pdirectory/AI-IntelArc-ArchLinux"
 cd $pdirectory/AI-IntelArc-ArchLinux
 echo ""
-./AI-Start.sh
+AIIAAL_update
 echo ""
 echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux"
 cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
@@ -32,9 +32,6 @@ mv -f "/tmp/$aiiaalpkg-IntelArc-ArchLinux/.git" "$pdirectory/AI-IntelArc-ArchLin
 git checkout .
 rm -r /tmp/$aiiaalpkg-IntelArc-ArchLinux
 source $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/libref-$aiiaalpkg
-echo ""
-echo "Applying AIIAAL modifications to original $aiiaalpkg..."
-AIIAAL_update_$aiiaalpkg
 echo ""
 echo "Installing packages from requirements_versions.txt..."
 cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
@@ -54,10 +51,10 @@ echo "AIIAAL_update" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-Ar
 echo "AIIAAL_update_$aiiaalpkg" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "python $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/launch.py \"\$@\"" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "sleep 60"
-echo "echo "Forge is still running in the background. Enter command: forge-exit to close down fooocus.""
+echo "echo "forge is still running in the background. Enter command: forge-exit to close down forge.""
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "Setting the new start file to be executable. (Authorization Required)"
 sudo chmod +x $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "Creating executable link in /usr/bin --> AIIAAL-$aiiaalpkg"
 sudo ln -sf "$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh" "/usr/bin/AIIAAL-$aiiaalpkg"
-echo "Installation complete. Start with command: AIIAAL-$aiiaalpkg with any fooocus arguments afterward"
+echo "Installation complete. Start with command: AIIAAL-$aiiaalpkg with any forge arguments afterward"
