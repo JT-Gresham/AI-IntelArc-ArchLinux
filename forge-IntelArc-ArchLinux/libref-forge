@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+AIIAAL_update_forge () {
+  cd $pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux
+  git switch main
+  git reset --hard HEAD
+  git pull
+  if grep -Fxq "import intel_extension_for_pytorch as ipex" launch.py
+    then
+      echo "Intel extensions found in launch.py...skipping"
+    else
+      sed -i 's|import sys|import sys\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers|g' launch.py
+  fi
+  if grep -Fxq "https://download.pytorch.org/whl/cu121" launch.py
+    then
+      echo "URL for Intel version of pytorch found in launch.py...skipping"
+    else
+      sed -i 's|https://download.pytorch.org/whl/cu121|https://pytorch-extension.intel.com/release-whl/stable/xpu/us/|g' launch.py
+  fi
+  if grep -Fxq "torch==2.1.0 torchvision==0.16.0" launch.py
+    then
+      echo "Intel versions of pytorch-related packages found in launch.py...skipping"
+    else
+      sed -i 's|torch==2.1.0 torchvision==0.16.0|torch>=2.1.0.post2 torchvision>=0.16.0.post2 torchaudio>=2.1.0.post2 intel-extension-for-pytorch>=2.1.30+xpu oneccl_bind_pt>=2.1.300+xpu|g' launch.py
+  fi
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/checkpoints"
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/loras"
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/wildcards"
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/sdxl_styles"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/checkpoints"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/loras"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/forge" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/wildcards"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/forge" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/sdxl_styles"
+cd $pdirectory
+$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/user_customize_forge.sh
+}
+
+forge-exit () {
+    kill $(pidof python $pdirectory/AI-IntelArc-ArchLinux/forge)
+}
