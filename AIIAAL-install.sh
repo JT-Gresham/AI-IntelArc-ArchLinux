@@ -59,6 +59,8 @@ echo "export SYCL_CACHE_PERSISTENT=1" >> $pdirectory/AI-IntelArcArchLinux/libref
 echo "#!/usr/bin/env bash" > $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "source $pdirectory/AI-IntelArcArchLinux/libref" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
+echo "cd $pdirectory/AI-IntelArcArchLinux" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
+echo "echo \"Updating AIIAAL if necessary...\"" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "git switch main" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "git pull" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "source $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/activate" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
