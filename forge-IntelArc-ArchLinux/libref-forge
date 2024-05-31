@@ -27,6 +27,7 @@ AIIAAL_update_forge () {
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Stable-diffusion"
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Lora"
 #rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/wildcards"
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/VAE"
 #rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/sdxl_styles"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Stable-diffusion"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Lora"
