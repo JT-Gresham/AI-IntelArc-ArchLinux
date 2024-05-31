@@ -9,7 +9,7 @@ AIIAAL_update_forge () {
     then
       echo "Intel extensions found in launch.py...skipping"
     else
-      sed -i 's|from modules import launch_utils|from modules import launch_utils\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers\nfrom diffusers import StableDiffusionPipeline\n\npipe = pipe.to("xpu")|g' launch.py
+      sed -i 's|from modules import launch_utils|from modules import launch_utils\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers\nimport torch\nfrom diffusers import StableDiffusionPipeline|g' launch.py
   fi
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Stable-diffusion"
 #rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/loras"
