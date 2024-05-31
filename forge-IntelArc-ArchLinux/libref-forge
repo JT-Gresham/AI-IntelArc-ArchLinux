@@ -27,12 +27,12 @@ AIIAAL_update_forge () {
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Stable-diffusion"
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Lora"
 #rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/wildcards"
-rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/VAE"
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/VAE"
 #rm -R "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/sdxl_styles"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Stable-diffusion"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/Lora"
 #ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/forge" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/wildcards"
-ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/VAEs" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/VAE"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/VAEs" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/models/VAE"
 #ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/forge" "$pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/sdxl_styles"
 cd $pdirectory
 $pdirectory/AI-IntelArc-ArchLinux/forge-IntelArc-ArchLinux/user_customize_forge.sh
