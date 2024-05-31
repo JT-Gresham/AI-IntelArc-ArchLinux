@@ -42,7 +42,7 @@ sleep 1
 pip install -r requirements_versions.txt
 echo ""
 echo "Creating the launcher file ($aiiaalpkg-Start.sh)"
-cp user_customize_fooocus_example.sh user_customize_fooocus.sh
+cp user_customize_forge_example.sh user_customize_forge.sh
 touch $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "#!/usr/bin/env bash" > $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
@@ -54,7 +54,7 @@ echo "AIIAAL_update" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-Ar
 echo "AIIAAL_update_$aiiaalpkg" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "python $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/launch.py \"\$@\"" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "sleep 60"
-echo "echo "Fooocus is still running in the background. Enter command: fooocus-exit to close down fooocus.""
+echo "echo "Forge is still running in the background. Enter command: forge-exit to close down fooocus.""
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "Setting the new start file to be executable. (Authorization Required)"
 sudo chmod +x $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
