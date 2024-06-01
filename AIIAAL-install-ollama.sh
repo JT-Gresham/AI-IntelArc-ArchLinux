@@ -25,10 +25,12 @@ source AI-IntelArc-ArchLinux_env/bin/activate
 echo ""
 echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux"
 cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
-echo "Installing the $aiiaalpkg binary --> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/bin/ollama"
-sudo curl -L https://ollama.com/download/ollama-linux-amd64 -o --create-dirs bin/ollama
-sudo chmod +x bin/ollama
 echo ""
+echo "Installing the $aiiaalpkg binary --> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/bin/ollama"
+sudo curl -L https://ollama.com/download/ollama-linux-amd64 --create-dirs --output bin/ollama
+echo "The base ollama file needs to be made executable. Authorize with sudo user password below."
+sudo chmod +x bin/ollama
+
 echo ""
 echo "Installing packages from requirements_$aiiaalpkg.txt..."
 pip install -r requirements_$aiiaalpkg.txt
