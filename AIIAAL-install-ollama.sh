@@ -26,7 +26,7 @@ echo ""
 echo "Changing directory ->$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux"
 cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux
 echo "Installing the $aiiaalpkg binary --> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/bin/ollama"
-sudo curl -L https://ollama.com/download/ollama-linux-amd64 -o bin/ollama
+sudo curl -L https://ollama.com/download/ollama-linux-amd64 -o --create-dirs bin/ollama
 sudo chmod +x bin/ollama
 echo ""
 echo ""
