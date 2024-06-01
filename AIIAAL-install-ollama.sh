@@ -36,7 +36,7 @@ pip install -r requirements_$aiiaalpkg.txt
 echo ""
 echo "Initializing ollama with IPEX for your GPU..."
 init-ollama
-ln -sf $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/ipex ipex
+ln -sf $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/ipexrun ipexrun
 ln -sf $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/bin/ollama ollama
 ln -sf $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/open-webui open-webui
 echo "Creating the launcher file ($aiiaalpkg-Start.sh)"
@@ -50,7 +50,7 @@ echo "source $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/act
 echo "cd $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "ipexrun xpu ollama serve &" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "sleep 10" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
-echo "ipex xpu open-webui serve" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
+echo "ipexrun xpu open-webui serve" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "#This file can be copied and the final python command can be modified with any $aiiaalpkg arguments (like --preset realistic). Just add arguments after entry_with_update.py" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
