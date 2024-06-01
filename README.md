@@ -22,8 +22,8 @@ Features installers and creates launchers for:
   </tr>
   <tr>
     <td>Ollama with Open WebUI</td>
-    <td align="center">WIP Testing</td>
-    <td>Installs, server starts, and UI opens in browser without error. Testing is ongoing.</td>
+    <td align="center">WIP</td>
+    <td>Reworking installation. Testing is ongoing.</td>
   </tr>
   <tr>
     <td>CrewAI</td>
