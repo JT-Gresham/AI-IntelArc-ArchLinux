@@ -29,6 +29,12 @@ AIIAAL_update_fooocus () {
     else
       sed -i 's|torchsde==0.2.5|torchsde>=0.2.5|g' requirements_versions.txt
   fi
+  if grep -Fxq "transformers>=4.34.0" requirements_versions.txt
+    then
+      echo "torchsde version fix found in requirements_versions.txt...skipping"
+    else
+      sed -i 's|transformers==4.30.2|transformers>=4.34.0|g' requirements_versions.txt
+  fi
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/checkpoints"
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras"
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
