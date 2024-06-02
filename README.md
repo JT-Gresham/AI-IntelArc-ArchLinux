@@ -21,34 +21,34 @@ Features installers and creates launchers for:
     <th>Development Phase Notes</th>
   </tr>
   <tr>
-    <td>Ollama with Open WebUI</td>
-    <td align="center">WIP</td>
-    <td>Reworking installation. Testing is ongoing.</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Ollama<br>+<br>Open WebUI</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Functional<br>Testing</td>
+    <td style="white-space:pre-wrap; word-wrap:break-word">*  Installs, GPU recognized with Ipex/oneAPI.<br>*  Testing is ongoing.</td>
   </tr>
   <tr>
-    <td>CrewAI</td>
-    <td align="center">WIP Testing</td>
-    <td>Could not use crewai[tools] due to package conflicts, but standard version installs without error. Testing is ongoing.</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">CrewAI</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">WIP<br>Testing</td>
+    <td style="white-space:pre-wrap; word-wrap:break-word">*  Could not use crewai[tools] due to package conflicts, but standard version installs without error<br>*  Testing is ongoing.</td>
   </tr>
     <tr>
-    <td>Fooocus</td>
-    <td align="center">Functional</td>
-    <td>Installs, opens in browser, and generates images using the GPU (xpu). I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. I will leave it up for the time being.</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Fooocus</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Functioning<br>Well</td>
+    <td style="white-space:pre-wrap; word-wrap:break-word">*  Installs, opens in browser, and generates images using the GPU (xpu).<br>*  I am currently working on adding API for use with ollama/Open WebUI.<br>*  I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. I will leave it up for the time being.</td>
   </tr>
     <tr>
-    <td>Forge (Automatic 1111)</td>
-    <td align="center">Functional-ish</td>
-    <td>I've successfully gotten it working and making images. Testing is ongoing beyond that.</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Forge<br>(Automatic 1111)</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Functional-ish</td>
+    <td style="white-space:pre-wrap; word-wrap:break-word">*  I've successfully gotten it working and making images but seems slow.<br>*  Testing is ongoing beyond that.</td>
   </tr>
   <tr>
-    <td>Automatic 1111 (stable-diffusion-webui)</td>
-    <td align="center">WIP</td>
-    <td>I have a working <a href="https://github.com/JT-Gresham/Auto1111-IntelArc-ArchLinux">standalone</a>. Currently attempting to modify for AIIAAL.</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Automatic 1111<br>(stable-diffusion-webui)</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">WIP</td>
+    <td style="white-space:pre-wrap; word-wrap:break-word">I have a working <a href="https://github.com/JT-Gresham/Auto1111-IntelArc-ArchLinux">standalone</a>. Currently attempting to modify for AIIAAL.</td>
   </tr>
   <tr>
-    <td>Roop Unleashed</td>
-    <td align="center">WIP</td>
-    <td>I have a working <a href="https://github.com/JT-Gresham/roopUL-IntelArc-ArchLinux">standalone</a>. Currently attempting to modify for AIIAAL.</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Roop<br>Unleashed</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">WIP</td>
+    <td style="white-space:pre-wrap; word-wrap:break-word">I have a working <a href="https://github.com/JT-Gresham/roopUL-IntelArc-ArchLinux">standalone</a>. Currently attempting to modify for AIIAAL.</td>
   </tr>
 </table> 
   
