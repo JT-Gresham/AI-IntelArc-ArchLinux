@@ -7,7 +7,7 @@ cd AI-IntelArc-ArchLinux
 echo "Regenerating LIBREF..."
 echo "pdirectory=$pdirectory" > ./libref
 echo "export LD_LIBRARY_PATH=$pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/lib" >> ./libref
-echo "export CUDA_PATH=$pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/lib/python3.11/site-packages/nvidia" >> ./libref
+#echo "export CUDA_PATH=$pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/lib/python3.11/site-packages/nvidia" >> ./libref
 echo "export USE_XETLA=OFF" >> ./libref
 echo "export SYCL_PI_LEVEL_ZERO_USE_IMMEDIATE_COMMANDLISTS=1" >> ./libref
 echo "export SYCL_CACHE_PERSISTENT=1" >> ./libref
