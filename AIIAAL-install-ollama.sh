@@ -36,13 +36,15 @@ echo "Installing packages from requirements_$aiiaalpkg.txt..."
 pip install -r requirements_$aiiaalpkg.txt
 echo ""
 #Create directory environment and symlinks to contain ollama
-mkdir -p ".ollama"
-ln -sf "./.ollama" ~/.ollama
-ln -sf "$pdirectory/shared/LLMs/" "./.ollama/models/blobs/"
+mkdir -p "$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/.ollama"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/.ollama" "~/\.ollama"
+ln -sf "$pdirectory/shared/LLMs/" "$pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/\.ollama/models/blobs/"
 echo "Initializing ollama with IPEX for your GPU..."
+#Create symlinks for ipex, ollama, and openwebui
 ln -sf $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/ipexrun ipexrun
 init-ollama
 ln -sf $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/open-webui open-webui
+#Create launcher file
 echo "Creating the launcher file ($aiiaalpkg-Start.sh)"
 touch $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
 echo "#!/usr/bin/env bash" > $pdirectory/AI-IntelArc-ArchLinux/$aiiaalpkg-IntelArc-ArchLinux/$aiiaalpkg-Start.sh
