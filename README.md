@@ -62,4 +62,7 @@ This framework assumes that you have these already installed:
 # Installation Is Easy
 Simply run (as a standard user, not root) the installation bash file (ex: AIIAAL-install.sh, AIIAAL-install-ollama.sh, etc...) for the package you want to install.  Yeah...it's that easy!
 *    Note: [AIIAAL needs to be already installed](https://github.com/JT-Gresham/AI-IntelArc-ArchLinux/blob/main/AIIAAL-install.sh) before using the other installers. AIIAAL is the framework the others are built on. You only need to install the framework (AIIAAL) once.
+*    SOME packages, like FORGE, may shutdown after the first run. That's not my doing, but it seems that those packages need to create their own configs. Run your launcher again afterward and it should load up.
+*    SOME packages may throw out some python package version mismatch errors during installation, but I've found that they don't seem to have an impact and can be ignored.
+*    This framework is HEAVILY reliant on a few packages released by Intel (Ipex, Intel-Extension-For-Pytorch, etc...) and we are all limited to their progress at this point.  Keep that in mind going forward.
   
