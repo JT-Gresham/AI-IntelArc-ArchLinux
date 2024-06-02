@@ -3,6 +3,7 @@
 source ./libref
 source ./AI-IntelArc-ArchLinux_env/bin/activate
 aiiaalpkg="ollama"
+aiiaaluser=$(whoami)
 
 echo "########## $aiiaalpkg for Intel Arc GPUs on Arch Linux ##########"
 echo "##################### framework by JT Gresham #####################"
@@ -34,6 +35,10 @@ echo ""
 echo "Installing packages from requirements_$aiiaalpkg.txt..."
 pip install -r requirements_$aiiaalpkg.txt
 echo ""
+#Create directory environment and symlinks to contain ollama
+mkdir -p ".ollama"
+ln -sf "./.ollama" ~/.ollama
+ln -sf "$pdirectory/shared/LLMs/" "./.ollama/models/blobs/"
 echo "Initializing ollama with IPEX for your GPU..."
 ln -sf $pdirectory/AI-IntelArc-ArchLinux/AI-IntelArc-ArchLinux_env/bin/ipexrun ipexrun
 init-ollama
