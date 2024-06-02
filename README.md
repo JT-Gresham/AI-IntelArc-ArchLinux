@@ -1,6 +1,15 @@
 # AI-IntelArc-ArchLinux
 Master repository for AIIAAL - A one-stop framework for popular AI related software for **Arch Linux** users with **Intel Arc GPUs**.  
+  
+# Recent Dev Notes:  
+\##### From JT/OCD: #####  
+I know I need to put out some documentation on how to use this "framework", so bare with me.  The development is pretty fluid right now and I'm changing how I do things on the fly. Once I've got my structure hammered down, I'll create a comprehensive guide and FAQ section so you all can get to using it.
 
+6/2/2024  
+*  I've been refining the installers focusing on ollama+OpenWebUI and fooocus. I'm happy to say that they are working well within the python3.11 environment.
+*  I've noticed that sometimes there's red version mismatch error messages that will pop up with pip, but these "incompatible" versions work just fine, but testing is ongoing...just a heads-up
+*  I've added a "SHARED" folder to the primary AIIAAL directory to make it easier to use the same files for different programs, if possible. I'm still trying to tie that into ollama+OpenWebUI, but it's being a PITA. Shoot me a msg if you can get those symlink locations working. Fooocus uses these just fine without any issue at this point.
+  
 # How You Can Support Development  
 
 [<img align="left" width="20%" src="https://media.giphy.com/media/hXMGQqJFlIQMOjpsKC/giphy.gif">](https://bmc.link/OCD_Insomniac)  
