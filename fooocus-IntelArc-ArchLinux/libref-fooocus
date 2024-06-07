@@ -5,7 +5,7 @@ AIIAAL_update_fooocus () {
   git switch main
   git fetch
   git reset --hard HEAD
-  git merge origin/main
+  git merge '@{u}'
   if grep -Fxq "import intel_extension_for_pytorch as ipex" launch.py
     then
       echo "Intel extensions found in launch.py...skipping"
