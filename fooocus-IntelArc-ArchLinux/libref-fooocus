@@ -3,7 +3,7 @@
 AIIAAL_update_fooocus () {
   cd $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux
   git switch main
-  git fetch --all origin/main
+  git fetch --all https://github.com/lllyasviel/Fooocus/main
   git reset --hard HEAD
   git pull
   if grep -Fxq "import intel_extension_for_pytorch as ipex" launch.py
