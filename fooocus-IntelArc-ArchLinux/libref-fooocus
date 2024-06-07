@@ -6,6 +6,10 @@ AIIAAL_update_fooocus () {
   git fetch
   git reset --hard HEAD
   git merge '@{u}'
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/checkpoints/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets/fooocus/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/presets/"
 }
 
 Intel_mods () {
