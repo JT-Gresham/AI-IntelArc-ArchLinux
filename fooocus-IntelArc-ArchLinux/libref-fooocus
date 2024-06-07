@@ -8,7 +8,7 @@ AIIAAL_update_fooocus () {
   git merge '@{u}'
 }
 
-intel_mods () {
+Intel_mods () {
   if grep -Fxq "import intel_extension_for_pytorch as ipex" launch.py
     then
       echo "Intel extensions found in launch.py...skipping"
