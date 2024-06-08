@@ -2,7 +2,7 @@
 
 AIIAAL_update_fooocus () {
   cd $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux
-  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/checkpoints/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sharedmodels/checkpoints/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets/fooocus/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/presets/"
@@ -47,11 +47,12 @@ rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/check
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras"
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
 rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles"
+rm -R "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/checkpoints"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles"
-ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/presets" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/presets/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets"
 cd $pdirectory
 $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
 }
