@@ -3,9 +3,9 @@
 AIIAAL_update_fooocus () {
   pip install --upgrade -r requirements_fooocus.txt
   cd $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux
-  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sharedmodels/checkpoints/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i/"
-  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i/"
-  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/checkpoints/" "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras/" "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i/"
+  cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles/" "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets/fooocus/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/presets/"
   git switch main
   git fetch
