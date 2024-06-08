@@ -2,14 +2,14 @@
 
 AIIAAL_update_fooocus () {
   cd $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux
-  git switch main
-  git fetch
-  git reset --hard HEAD
-  git merge '@{u}'
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/checkpoints/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus/"
   cp -R --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets/fooocus/*" "$pdirectory/AI-IntelArc-ArchLinux/shared/presets/"
+  git switch main
+  git fetch
+  git reset --hard HEAD
+  git merge '@{u}'
 }
 
 Intel_mods () {
@@ -17,7 +17,7 @@ Intel_mods () {
     then
       echo "Intel extensions found in launch.py...skipping"
     else
-      sed -i 's|import sys|import sys\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers|g' launch.py
+      sed -i 's|import sys|import sys\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers\nopenvino\nonnxruntime-openvino|g' launch.py
   fi
   if grep -Fxq "https://download.pytorch.org/whl/cu121" launch.py
     then
@@ -51,6 +51,7 @@ ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/checkpoints/t2i" "$pdirectory/A
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/models/loras"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles"
+ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/presets" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets"
 cd $pdirectory
 $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
 }
