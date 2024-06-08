@@ -18,4 +18,4 @@ onemkl-sycl-vm
 onemkl-sycl-rng
 onemkl-sycl-stats
 openvino
-onnxruntime-openvino<==1.17.1
+onnxruntime-openvino<=1.17.1
