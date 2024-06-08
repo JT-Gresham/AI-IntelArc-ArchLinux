@@ -41,7 +41,7 @@ Features installers and creates launchers for:
   </tr>
     <tr>
     <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Fooocus</td>
-    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Functioning<br>Well</td>
+    <td align="center" style="white-space:pre-wrap; word-wrap:break-word">Recent update wrecked<br>WIP..again</td>
     <td style="white-space:pre-wrap; word-wrap:break-word">*  Installs, opens in browser, and generates images using the GPU (xpu).<br>*  I am currently working on adding API for use with ollama/Open WebUI.<br>*  I have a working <a href="https://github.com/JT-Gresham/Fooocus-IntelArc-ArchLinux">standalone</a>. I will leave it up for the time being.</td>
   </tr>
     <tr>
