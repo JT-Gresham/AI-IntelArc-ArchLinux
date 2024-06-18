@@ -59,8 +59,8 @@ ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/loras/t2i" "$pdirectory/AI-Inte
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/wildcards/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/wildcards"
 ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles"
 #ln -sf "$pdirectory/AI-IntelArc-ArchLinux/shared/presets/fooocus" "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets"
-cp /tmp/fooocus-Start.sh $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/
-cp /tmp/user_customize_fooocus.sh $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/
+mv /tmp/fooocus-Start.sh $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/
+mv /tmp/user_customize_fooocus.sh $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/
 cd $pdirectory
 $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
 }
