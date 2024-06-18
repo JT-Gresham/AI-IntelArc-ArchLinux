@@ -8,8 +8,8 @@ AIIAAL_update_fooocus () {
   cp -r --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/sdxl_styles/." "$pdirectory/AI-IntelArc-ArchLinux/shared/sdxl_styles/fooocus"
   cp -r --no-clobber "$pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux/presets/fooocus/." "$pdirectory/AI-IntelArc-ArchLinux/shared/presets"
   git switch main
-  git fetch
-  git reset --hard HEAD
+  git fetch --all
+  git reset --hard origin/master
   git clean -f -d
   git pull
 #  git merge '@{u}'
