@@ -12,7 +12,7 @@ AIIAAL_update_fooocus () {
   git reset --hard HEAD
   git clean -f -d
   git pull
-  git merge '@{u}'
+#  git merge '@{u}'
 }
 
 Intel_mods () {
