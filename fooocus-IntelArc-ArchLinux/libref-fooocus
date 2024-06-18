@@ -10,6 +10,8 @@ AIIAAL_update_fooocus () {
   git switch main
   git fetch
   git reset --hard HEAD
+  git clean -f -d
+  git pull
   git merge '@{u}'
 }
 
