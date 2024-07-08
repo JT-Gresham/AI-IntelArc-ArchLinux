@@ -19,4 +19,5 @@ onemkl-sycl-vm
 onemkl-sycl-rng
 onemkl-sycl-stats
 openvino
+ipex-llm
 #onnxruntime-openvino<=1.16.0
