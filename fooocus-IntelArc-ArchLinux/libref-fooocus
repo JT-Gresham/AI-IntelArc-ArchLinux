@@ -30,7 +30,7 @@ Intel_mods () {
     then
       echo "URL for Intel version of pytorch found in launch.py...skipping"
     else
-      sed -i 's|https://download.pytorch.org/whl/cu121|https://pytorch-extension.intel.com/release-whl/stable/xpu/us/|g' launch.py
+      sed -i 's|https://download.pytorch.org/whl/cu121|https:// developer.intel.com/ipex-whl-stable-xpu|g' launch.py
   fi
   if grep -Fxq "torch==2.1.0 torchvision==0.16.0" launch.py
     then
