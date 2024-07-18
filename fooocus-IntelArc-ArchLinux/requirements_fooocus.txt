@@ -1,4 +1,4 @@
---extra-index-url https://developer.intel.com/ipex-whl-stable-xpu
+--abi --extra-index-url https://developer.intel.com/ipex-whl-stable-xpu
 
 torch==2.1.0.post2
 torchvision==0.16.0.post2
