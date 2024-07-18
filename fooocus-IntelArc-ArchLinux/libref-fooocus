@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source $pdirectory/AI-IntelArc-ArchLinux/libref
 
 AIIAAL_update_fooocus () {
   cd $pdirectory/AI-IntelArc-ArchLinux/fooocus-IntelArc-ArchLinux
