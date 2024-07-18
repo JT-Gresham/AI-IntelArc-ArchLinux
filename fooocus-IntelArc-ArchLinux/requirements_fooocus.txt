@@ -1,4 +1,4 @@
---abi --extra-index-url https://developer.intel.com/ipex-whl-stable-xpu
+--extra-index-url https://developer.intel.com/ipex-whl-stable-xpu
 
 torch==2.1.0.post2
 torchvision==0.16.0.post2
@@ -7,16 +7,16 @@ intel-extension-for-pytorch==2.1.30+xpu
 intel-extension-for-transformers==1.3.2
 scipy==1.10.0
 numpy<=1.26.4
-mkl-devel-dpcpp
-dpcpp-cpp-rt
-mkl-devel
-onemkl-sycl-blas
-onemkl-sycl-lapack
-onemkl-sycl-sparse
-onemkl-sycl-dft
-onemkl-sycl-vm
-onemkl-sycl-rng
-onemkl-sycl-stats
-openvino
-ipex-llm
-onnxruntime-openvino<=1.17.1
+mkl-devel-dpcpp --abi
+dpcpp-cpp-rt --abi
+mkl-devel --abi
+onemkl-sycl-blas --abi
+onemkl-sycl-lapack --abi
+onemkl-sycl-sparse --abi
+onemkl-sycl-dft --abi
+onemkl-sycl-vm --abi
+onemkl-sycl-rng --abi
+onemkl-sycl-stats --abi
+openvino --abi
+ipex-llm --abi
+onnxruntime-openvino<=1.17.1 --abi
