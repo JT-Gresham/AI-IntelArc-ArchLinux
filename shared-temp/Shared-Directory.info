@@ -1,0 +1,7 @@
+The "shared" directory is used as the central location for models, styles, etc...
+
+The shared-template directory shows the structure.
+
+This is done this way so that a symlink can be used to direct to an existing library.
+
+If you do not have one, then simply create a symlink named "shared" pointing to "shared-template"
