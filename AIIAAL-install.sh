@@ -67,4 +67,5 @@ echo "AIIAAL_update" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "" >> $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
 echo "Setting the new start file to be executable. (Authorization Required)"
 sudo chmod +x $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh
+$pdirectory/AI-IntelArc-ArchLinux/librefgen
 echo "Installation complete. Start with command: $pdirectory/AI-IntelArc-ArchLinux/AI-Start.sh"
