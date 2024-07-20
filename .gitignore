@@ -10,6 +10,7 @@ __pycache__
 *.partial
 *.onnx
 
-shared/*
+shared
+shared/**
 
 fooocus-IntelArc-ArchLinux/user_customize_fooocus.sh
