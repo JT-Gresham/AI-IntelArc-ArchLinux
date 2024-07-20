@@ -12,7 +12,7 @@ AIIAAL_update_forge () {
     then
       echo "Intel extensions found in launch.py...skipping"
     else
-      sed -i 's|from modules_forge.config import always_disabled_extensions|from modules_forge.config import always_disabled_extensions\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers\nimport torch\nfrom diffusers import StableDiffusionPipeline|g' launch_utils.py
+      sed -i 's|from modules_forge.config import always_disabled_extensions|from modules_forge.config import always_disabled_extensions\nimport intel_extension_for_pytorch as ipex\nimport intel_extension_for_transformers\nimport torch\nfrom diffusers import StableDiffusionPipeline\nimport pmdk as NVML|g' launch_utils.py
   fi
 
 
