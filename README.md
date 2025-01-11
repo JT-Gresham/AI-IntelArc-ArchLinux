@@ -1,5 +1,6 @@
 # AI-IntelArc-ArchLinux
 Master repository for AIIAAL - A one-stop framework for popular AI related software for **Arch Linux** users with **Intel Arc GPUs**.  
+ THIS REPOSITORY IS NOW OBSELETE AND Will NOT BE UPDATED HERE - <a href="https://github.com/JT-Gresham/AIInAAL">The "AIInAAL" framework is the new version I am actively working on.</a>
   
 # Recent Dev Notes:  
 \##### From JT/OCD: #####  
